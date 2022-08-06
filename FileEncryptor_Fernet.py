@@ -1,5 +1,4 @@
 import os
-import sys
 import random
 from cryptography.fernet import Fernet
 
@@ -812,13 +811,11 @@ def TerminalInputCommenter(ParsedInput):
 
     return COMMENTED_INPUT, True
 
-def Terminal(Input):
+def Terminal():
 
     cryptograph.Init()
 
     terminal_input = input("FernetFileEncrpytor-Decryptor@root#: ")
-
-    #terminal_input = Input
 
     ParsedTerminalInput = TerminalInputParser(terminal_input)
 
@@ -942,7 +939,7 @@ Operate = False
 
 while run_terminal:
 
-    run_terminal, Operate = Terminal("")
+    run_terminal, Operate = Terminal()
 
     if Operate:
 
