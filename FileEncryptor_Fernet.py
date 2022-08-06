@@ -815,7 +815,7 @@ def Terminal():
 
     cryptograph.Init()
 
-    terminal_input = input("FernetFileEncrpytor-Decryptor@root#: ")
+    terminal_input = input("FernetFileEncryptor#: ")
 
     ParsedTerminalInput = TerminalInputParser(terminal_input)
 
