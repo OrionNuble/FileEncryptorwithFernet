@@ -880,7 +880,7 @@ def Terminal():
             print("        command: encrypt: Description:   Command for encrypting a file\n")
             print("        command: decrypt: Description:   Command for decrypting a file\n")
             print("        command: generate_key: Description:   Used for key generation. Can be supplied with a name and path, or will generate a key with a fixed name and the path will be the cwd\n")
-            print("        command: non_operables: Description:   Supply with an option (--add or --remove) to add or remove file extensions that cannot be operated on\n")
+            print("        command: non_operables: Description:   Supply with an option (-add or -remove) to add or remove file extensions that cannot be operated on\n")
             print("        command: cd: Description:   If supplied with a valid directory, will change the cwd to the supplied directory\n")
             print("        command: pwd: Description:   Will print the current cwd\n")
             print("        command: sd: Description:   If supplied with a valid directory, will save the directory to a file. Then, the saved directory can be used with the keyword 'dir.'\n")
@@ -890,7 +890,7 @@ def Terminal():
             print("        command: --help: Description:   Will display this message\n")
             print("        command: exit: Description:   Will exit the application\n\n")
 
-            print("        identifier: -i: Description:   Identifiers the beginning of file input. Stands for 'input'. It means that the operation is going to be done on a single file\n")
+            print("        identifier: -i: Description:   Identifies the beginning of file input. Stands for 'input'. It means that the operation is going to be done on a single file\n")
             print("        identifier: -dir: Description:   Identifies the beginning of a dir input. Stands for 'directory'. It means that the operation is going to be done on an entire directory\n")
             print("        identifier: -o: Description:   Identifies the beginning of a output name. Stands for 'output'\n")
             print("        identifier: -w: Description:   Identifies the end of a file input and beginning of a key file input. Stands for 'with'\n")
