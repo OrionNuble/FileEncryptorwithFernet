@@ -1,7 +1,6 @@
 import os
 import sys
 import random
-from PyQt5.QtGui import QPainter
 from cryptography.fernet import Fernet
 
 def GetFileExtension(FileName):
