@@ -287,7 +287,7 @@ class Cryptograph():
 
         else:
 
-            return "unknown warning"
+            print("unknown warning")
 
     def RemoveDirPrefix(self, String):
 
@@ -625,6 +625,10 @@ def TerminalInputCommenter(ParsedInput):
 
                             File_Two = cryptograph.SavedDirectory + "\\" + cryptograph.RemoveDirPrefix(File_Two)
 
+                            cryptograph.InMemoryKeyFile = File_Two
+
+                            cryptograph.SaveData(cryptograph.InMemoryKeyFile, "KeyFile")
+
                         if not os.path.isfile(File_Two):
 
                             print(cryptograph.DisplayError("PATH NOT FOUND: PATH", File_Two))
@@ -815,7 +819,7 @@ def Terminal():
 
     cryptograph.Init()
 
-    terminal_input = input("FernetFileEncryptor#: ")
+    terminal_input = input("FernetFileEncrpytor-Decryptor@root#: ")
 
     ParsedTerminalInput = TerminalInputParser(terminal_input)
 
@@ -860,7 +864,7 @@ def Terminal():
 
         elif CommentedTerminalInput[0] == "print":
 
-            print(str(FILE_TWO) + "\n")
+            print("\n" + str(FILE_TWO) + "\n")
 
         elif CommentedTerminalInput[0] == "--help":
 
@@ -922,7 +926,7 @@ def Terminal():
 
         elif CommentedTerminalInput[0] == "pwd":
 
-            print(os.getcwd() + "\n")
+            print("\n" + os.getcwd() + "\n")
 
         elif CommentedTerminalInput[0] == "clear":
 
